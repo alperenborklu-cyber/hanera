@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HANERA — Yaşamın Yeni Evresi | Gölbaşı, Ankara</title>
+  <meta name="description" content="HANERA; Gölbaşı Ankara'da insan odaklı, doğayla bütünleşen yeni bir yaşam topluluğu. Mavi Bölgeler ilhamı, biyofilik mimari ve seçkin müstakil villa yaşamı." />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%2321483F'/><text x='50' y='68' font-size='55' text-anchor='middle' fill='%23F1E9DC' font-family='serif'>H</text></svg>" />
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ==========================================================================
+       SITE HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <!-- Brand Logo (Pure Editorial Typography) -->
+      <a href="#" class="brand">
+        <span class="brand-name">HANERA</span>
+        <span class="brand-tag">GÖLBAŞI</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="site-nav">
+        <ul class="nav-links">
+          <li><a href="#kurumsal" data-i18n="nav_corporate">Kurumsal</a></li>
+          <li><a href="#hikayemiz" data-i18n="nav_story">Felsefe</a></li>
+          <li><a href="#konsept" data-i18n="nav_concept">Konsept</a></li>
+          <li><a href="#olanaklar" data-i18n="nav_amenities">Yaşam Alanları</a></li>
+          <li><a href="#planlar" data-i18n="nav_plans">Villalar & Planlar</a></li>
+          <li><a href="#konum" data-i18n="nav_location">Konum</a></li>
+          <li><a href="#galeri" data-i18n="nav_gallery">Galeri</a></li>
+          <li><a href="#sss" data-i18n="nav_faq">S.S.S.</a></li>
+          <li><a href="#iletisim" data-i18n="nav_contact">İletişim</a></li>
+        </ul>
+
+        <!-- Actions -->
+        <div class="nav-actions">
+          <div class="lang-switch">
+            <button class="lang-btn active" data-lang="tr">TR</button>
+            <span class="lang-divider">|</span>
+            <button class="lang-btn" data-lang="en">EN</button>
+          </div>
+          <button class="btn btn-bronz btn-sm" data-open-catalogue data-i18n="nav_catalogue">Katalog İndir</button>
+          <button class="mobile-menu-btn" aria-label="Menüyü Aç">Menü</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION (16:9 FULLSCREEN CINEMATIC NATURE VIDEO BACKGROUND)
+       ========================================================================== -->
+  <section class="hero section-bleed">
+    <div class="hero-media-wrap">
+      <!-- 16:9 Optimized Hero Video (360527_small - Pure Natural Drone Shot) -->
+      <video class="hero-video" id="heroVideo" autoplay muted loop playsinline preload="auto" poster="assets/images/hero-poster.jpg">
+        <source src="assets/videos/hero-360527.mp4" type="video/mp4" />
+        <source src="assets/videos/hero-drone.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <div class="container hero-content">
+      <div class="hero-eyebrow-wrap">
+        <span class="hero-badge-dot"></span>
+        <span class="hero-eyebrow" data-i18n="hero_eyebrow">GÖLBAŞI, ANKARA · İNSAN ODAKLI YAŞAM TOPLULUĞU</span>
+      </div>
+
+      <h1 class="hero-title" data-i18n="hero_title">
+        Yaşamın <em>Yeni Evresi.</em>
+      </h1>
+      
+      <p class="hero-lead" data-i18n="hero_lead">
+        Sadece bir ev değil; doğayla bütünleşen yeni bir yaşam düşüncesi. Modern insanın sağlık, üretim, aidiyet ve sükunet arayışını Mogan Gölü kıyısında buluşturuyoruz.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#hikayemiz" class="btn btn-primary" data-i18n="hero_cta_explore">Felsefeyi Keşfet</a>
+        <button class="btn btn-secondary" data-open-catalogue data-i18n="hero_cta_catalogue">E-Katalog İndir</button>
+        <a href="#iletisim" class="btn btn-ghost" data-i18n="hero_cta_contact">Özel Ziyaret Randevusu</a>
+      </div>
+    </div>
+
+    <!-- Hero Bottom Bar: Scroll Hint & Video State Control -->
+    <div class="hero-bottom-bar">
+      <div class="hero-scroll-hint">
+        <span class="scroll-line"></span>
+        <span class="scroll-text">AŞAĞI KAYDIRIN</span>
+      </div>
+      <div class="hero-video-controls">
+        <button class="video-toggle-btn" aria-label="Videoyu Durdur/Oynat" id="videoToggleBtn">
+          <span class="video-state-icon">⏸</span>
+          <span class="video-state-text">CANLI SİNEMATİK</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       KURUMSAL (HANERA MİMARİ VE YATIRIM GÜVENCESİ)
+       ========================================================================== -->
+  <section id="kurumsal" class="corporate-band">
+    <div class="container">
+      <div class="corp-grid">
+        <div class="corp-left">
+          <div class="eyebrow" data-i18n="corp_eyebrow">MİMARİ VE YATIRIM VİZYONU</div>
+          <h3 data-i18n="corp_title">Yaşamı yeniden düşünmek.</h3>
+          <p data-i18n="corp_desc">
+            Hanera, geleneksel konut anlayışının ötesine geçerek insan ölçeğini, doğanın bilgeliğini ve sürdürülebilir mimariyi buluşturan yeni nesil bir yaşam topluluğudur.
+          </p>
+        </div>
+        <div class="corp-partners">
+          <div class="corp-card">
+            <div class="corp-card-tag">BİYOFİLİK YAKLAŞIM</div>
+            <h4 data-i18n="corp_card1_title">Doğayla Bütünleşme</h4>
+            <p data-i18n="corp_card1_desc">Toprakla, suyla ve mevsim döngüleriyle kesintisiz bağ kuran, güneş ışığını ve göl esintisini içeri davet eden mimari kurgu.</p>
+          </div>
+          <div class="corp-card">
+            <div class="corp-card-tag">SÜRDÜRÜLEBİLİR YAPI</div>
+            <h4 data-i18n="corp_card2_title">Kalıcı ve Değer Odaklı</h4>
+            <p data-i18n="corp_card2_desc">Doğal malzemeler, uzun ömürlü mühendislik ve nesiller boyu değerini koruyacak adanmış bir inşaat vizyonu.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       HİKAYEMİZ / KÖKEN & FELSEFE (STORY)
+       ========================================================================== -->
+  <section id="hikayemiz" class="story-section">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-content">
+          <div class="eyebrow" data-i18n="story_eyebrow">İSMİN KÖKENİ & FELSEFE</div>
+          <h2 data-i18n="story_title">Adanmış bir yaşam düşüncesi, yeni bir dönemin adıyla birleşir.</h2>
+          <div class="story-lead-quote" data-i18n="story_quote">
+            “HAN (Hanok: Yaşama ve yere adanmışlık) + ERA (Çağ, yeni bir başlangıç)”
+          </div>
+          <p class="story-body" data-i18n="story_p1">
+            Mavi Bölgeler (Blue Zones) araştırmalarından ve Ikigai felsefesinden ilham alan Hanera; uzun, anlamlı ve sağlıklı bir yaşamın sırlarını Mogan Gölü kıyısında hayata geçiriyor.
+          </p>
+          <p class="story-body" data-i18n="story_p2">
+            Doğal hareket, sade ve mevsimsel beslenme, güçlü komşuluk bağları ve insanın güne dingin bir amaçla başlamasını sağlayan gündelik ritüeller projenin özünü oluşturur.
+          </p>
+          
+          <div class="story-metrics">
+            <div>
+              <div class="story-metric-num">110.000 m²</div>
+              <div class="story-metric-label">Göl Kıyısı Yerleşimi</div>
+            </div>
+            <div>
+              <div class="story-metric-num">%78</div>
+              <div class="story-metric-label">Açık Alan & Doğa</div>
+            </div>
+            <div>
+              <div class="story-metric-num">64</div>
+              <div class="story-metric-label">Bağımsız Villa Parseli</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="story-visual-wrap">
+          <img src="assets/images/story-01.jpg" alt="Hanera Yaşamı" class="story-img-main" />
+          <div class="story-img-badge">
+            <h5>Mogan Dinginliği</h5>
+            <p>Gölün üzerinden süzülen esinti ve kesintisiz ufuk çizgisi.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       KONSEPT: MODERN İNSANIN TEMEL İHTİYAÇLARI (4 PILLARS)
+       ========================================================================== -->
+  <section id="konsept" class="section surface-bg">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow" data-i18n="concept_eyebrow">YAŞAM DÜŞÜNCESİ</div>
+        <h2 class="section-title" data-i18n="concept_title">Dengeli bir hayatı oluşturan 4 temel deneyim.</h2>
+        <p class="section-desc" data-i18n="concept_desc">
+          Bedenin, zihnin ve topluluğun uyum içinde var olduğu bütünsel bir yaşam alanı.
+        </p>
+      </div>
+
+      <div class="concept-grid">
+        <!-- 1: Sağlık & Doğa -->
+        <div class="concept-card">
+          <div class="concept-media">
+            <img src="assets/images/concept-dogallik.jpg" alt="Sağlık ve Doğa" />
+            <div class="concept-num">01</div>
+          </div>
+          <div class="concept-body">
+            <h3>DOĞA</h3>
+            <div class="concept-quote">“Toprakla ve mevsimlerle gerçek bir temas.”</div>
+            <p>Her villaya ait organik bahçe alanları, biyofilik iç avlular ve Mogan Gölü kıyısının temiz havası.</p>
+          </div>
+        </div>
+
+        <!-- 2: Dinginlik -->
+        <div class="concept-card">
+          <div class="concept-media">
+            <img src="assets/images/concept-dinginlik.jpg" alt="Dinginlik ve Sükunet" />
+            <div class="concept-num">02</div>
+          </div>
+          <div class="concept-body">
+            <h3>DİNGİNLİK</h3>
+            <div class="concept-quote">“Hayatı yavaşlatıp her sabah suyun sesine uyanmak.”</div>
+            <p>Metropolün gürültüsünden arınmış, gölün yansımalarıyla huzur bulan sessiz ve korunaklı bir çevre.</p>
+          </div>
+        </div>
+
+        <!-- 3: Üretim & Hareket -->
+        <div class="concept-card">
+          <div class="concept-media">
+            <img src="assets/images/concept-denge.jpg" alt="Üretim ve Sağlık" />
+            <div class="concept-num">03</div>
+          </div>
+          <div class="concept-body">
+            <h3>ÜRETİM</h3>
+            <div class="concept-quote">“Hareket eden, üreten ve anlam bulan gündelik yaşam.”</div>
+            <p>4.8 km göl parkuru, su sporları iskelesi, permakültür bostanları ve wellness ritüelleri.</p>
+          </div>
+        </div>
+
+        <!-- 4: Aidiyet -->
+        <div class="concept-card">
+          <div class="concept-media">
+            <img src="assets/images/concept-ozgurluk.jpg" alt="Sosyal Aidiyet" />
+            <div class="concept-num">04</div>
+          </div>
+          <div class="concept-body">
+            <h3>AİDİYET</h3>
+            <div class="concept-quote">“Komşuluğun yeniden anlam kazandığı paylaşılan kültür.”</div>
+            <p>Benzer hayat değerlerini benimsemiş 64 ailenin buluştuğu seçkin, samimi ve güvenli bir komşuluk bağı.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SOSYAL OLANAKLAR / YAŞAM ALANLARI
+       ========================================================================== -->
+  <section id="olanaklar" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow" data-i18n="amenities_eyebrow">YAŞAM OLANAKLARI</div>
+        <h2 class="section-title" data-i18n="amenities_title">Bütünsel sağlık ve seçkin sosyal alanlar.</h2>
+        <p class="section-desc" data-i18n="amenities_desc">
+          Hanera Kulüp; sadece bir sosyal tesis değil, yenilenme ve sakin bir sosyalleşme merkezidir.
+        </p>
+      </div>
+
+      <!-- Amenity Tabs Navigation -->
+      <div class="amenities-tabs-nav">
+        <button class="amenity-tab-btn active" data-amenity="pool">Mogan Lagünü & Havuz</button>
+        <button class="amenity-tab-btn" data-amenity="spa">Longevity & Spa</button>
+        <button class="amenity-tab-btn" data-amenity="cafe">Organik Kafe & Bistro</button>
+        <button class="amenity-tab-btn" data-amenity="sports">Fitness & Pilates</button>
+        <button class="amenity-tab-btn" data-amenity="tennis">Tenis & Padel Kortları</button>
+      </div>
+
+      <!-- Amenity Showcase Box -->
+      <div class="amenity-card-showcase">
+        <div class="amenity-media">
+          <img src="assets/images/amenity-pool.jpg" alt="Mogan Lagünü & Isıtmalı Havuz" class="amenity-img" />
+        </div>
+        <div class="amenity-info">
+          <h3 class="amenity-title">Mogan Panoramik Lagünü & Isıtmalı Havuz</h3>
+          <p class="amenity-desc">
+            Dört mevsim kullanılabilen ısıtmalı lagün havuzu, göl manzarasıyla bütünleşen infinity kenarları ve güneşlenme teraslarıyla suyun yenileyici gücünü evinize getirir.
+          </p>
+          <ul class="amenity-feature-list">
+            <li>Açık Infinity Taşma Havuzu</li>
+            <li>Isıtmalı Kapalı Dinlenme Havuzu</li>
+            <li>Göl Kenarı Ahşap Güneşlenme Deck'i</li>
+            <li>Özel İskele & Kürek / Kayak İstasyonu</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       VİLLA PLANLARI & VAZİYET PLANI
+       ========================================================================== -->
+  <section id="planlar" class="section surface-bg">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow" data-i18n="plans_eyebrow">VİLLA TİPLERİ & PLANLAR</div>
+        <h2 class="section-title" data-i18n="plans_title">Mimari planları ve yerleşimi keşfedin.</h2>
+        <p class="section-desc" data-i18n="plans_desc">
+          Farklı aile ve yaşam gereksinimlerine göre titizlikle projelendirilmiş müstakil villa seçenekleri.
+        </p>
+      </div>
+
+      <div class="plans-wrapper">
+        <!-- Tabs -->
+        <div class="plans-nav-tabs">
+          <button class="plan-tab-btn active" data-plan="masterplan">Vaziyet Planı</button>
+          <button class="plan-tab-btn" data-plan="mogan">Villa Mogan (6+2)</button>
+          <button class="plan-tab-btn" data-plan="azure">Villa Azure (5+1)</button>
+          <button class="plan-tab-btn" data-plan="serene">Villa Serene (4+1)</button>
+          <button class="plan-tab-btn" data-plan="aura">Villa Aura (4+1)</button>
+        </div>
+
+        <div class="plan-grid-detail">
+          <div class="plan-info">
+            <h3 class="plan-title">Vaziyet Planı & Masterplan</h3>
+            <div class="plan-subtitle">110.000 m² Göl Cepheli Özel Yerleşim Alanı</div>
+
+            <div class="plan-specs-pills">
+              <span class="spec-pill">64 Bağımsız Parsel</span>
+              <span class="spec-pill">Göl Kıyı Bandı</span>
+              <span class="spec-pill">Hanera Sosyal Kulüp</span>
+              <span class="spec-pill">Botanik Eko-Koridor</span>
+            </div>
+
+            <p class="plan-description">
+              Mogan Gölü topoğrafyasına kusursuz uyum sağlayan kademeli yerleşim kurgusu sayesinde tüm villalar kesintisiz göl manzarası ve optimum gün ışığı alacak şekilde konumlandırılmıştır.
+            </p>
+
+            <div class="plan-features-grid">
+              <!-- Dynamically populated -->
+            </div>
+
+            <div style="display: flex; gap: 14px; margin-top: 10px;">
+              <button class="btn btn-primary" data-open-catalogue data-i18n="btn_download_plan">Kat Planı PDF İndir</button>
+              <a href="#iletisim" class="btn btn-outline">Villa Seçimi Yap</a>
+            </div>
+          </div>
+
+          <div class="plan-visual-wrap">
+            <div class="plan-media-toggle">
+              <button class="plan-toggle-btn toggle-blueprint active" data-i18n="btn_view_blueprint">Mimari Plan</button>
+              <button class="plan-toggle-btn toggle-render" data-i18n="btn_view_render">3D Render</button>
+            </div>
+            <img src="assets/images/plan-masterplan.svg" alt="Kat Planı" class="plan-visual-img" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       KONUM VE ERİŞİM
+       ========================================================================== -->
+  <section id="konum" class="location-section">
+    <div class="container">
+      <div class="location-grid">
+        <div>
+          <div class="eyebrow" data-i18n="location_eyebrow">STRATEJİK KONUM</div>
+          <h2 class="section-title text-left" data-i18n="location_title">Gölün sükunetinde, başkentin tüm akslarına yakın.</h2>
+          <p class="section-desc" style="margin-left: 0;" data-i18n="location_desc">
+            Mogan Gölü’nün kıyısında, Ankara’nın en saygın eğitim ve kültür kurumlarına komşu stratejik lokasyon.
+          </p>
+
+          <div class="location-cards-grid">
+            <div class="loc-card">
+              <div class="loc-card-title">Mogan Sahil Parkuru</div>
+              <div class="loc-card-meta">2 dk • 800 m</div>
+              <div class="loc-card-desc">Özel iskele ve göl kenarı bisiklet yolu</div>
+            </div>
+
+            <div class="loc-card">
+              <div class="loc-card-title">İncek & TED Koleji</div>
+              <div class="loc-card-meta">9 dk • 7.8 km</div>
+              <div class="loc-card-desc">Kolejler ve özel okullar aksı</div>
+            </div>
+
+            <div class="loc-card">
+              <div class="loc-card-title">Bilkent & ODTÜ Aksı</div>
+              <div class="loc-card-meta">15 dk • 14.2 km</div>
+              <div class="loc-card-desc">Üniversiteler ve araştırma merkezleri</div>
+            </div>
+
+            <div class="loc-card">
+              <div class="loc-card-title">Çankaya & Atakule</div>
+              <div class="loc-card-meta">18 dk • 17.5 km</div>
+              <div class="loc-card-desc">Başkent diplomasi ve sanat merkezi</div>
+            </div>
+
+            <div class="loc-card">
+              <div class="loc-card-title">Panora & Kuzu Effect</div>
+              <div class="loc-card-meta">14 dk • 13 km</div>
+              <div class="loc-card-desc">Seçkin gastronomi ve alışveriş</div>
+            </div>
+
+            <div class="loc-card">
+              <div class="loc-card-title">Esenboğa Havalimanı</div>
+              <div class="loc-card-meta">40 dk • 48 km</div>
+              <div class="loc-card-desc">Kesintisiz çevre yolu bağlantısı</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-visual-box">
+          <img src="assets/images/location-lake.jpg" alt="Mogan Gölü Konum" />
+          <div class="map-overlay-card">
+            <div>
+              <h5>HANERA</h5>
+              <p>Mogan Kıyı Şeridi, Gölbaşı / Ankara</p>
+            </div>
+            <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Haritada Aç</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       GALERİ
+       ========================================================================== -->
+  <section id="galeri" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow" data-i18n="gallery_eyebrow">GÖRSEL ARŞİV</div>
+        <h2 class="section-title" data-i18n="gallery_title">Hanera yaşamından seçkin kareler.</h2>
+      </div>
+
+      <div class="gallery-filters">
+        <button class="gallery-filter-btn active" data-filter="all">Tümü</button>
+        <button class="gallery-filter-btn" data-filter="exterior">Dış Mimari</button>
+        <button class="gallery-filter-btn" data-filter="interior">İç Mekan</button>
+        <button class="gallery-filter-btn" data-filter="wellness">Wellness</button>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item" data-category="exterior">
+          <img src="assets/images/gallery-01.jpg" alt="Göl Cepheli Villa Malikâne" />
+          <div class="gallery-item-overlay">
+            <span>Dış Mimari</span>
+            <h4>Göl Cepheli Villa & Havuz</h4>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="interior">
+          <img src="assets/images/gallery-02.jpg" alt="Galeri Tavanlı Salon" />
+          <div class="gallery-item-overlay">
+            <span>İç Mekan</span>
+            <h4>Ferah Galeri Salonu</h4>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="exterior">
+          <img src="assets/images/gallery-03.jpg" alt="Biyofilik Bahçe Terası" />
+          <div class="gallery-item-overlay">
+            <span>Dış Mimari</span>
+            <h4>Gün Batımı Bahçe Terası</h4>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="interior">
+          <img src="assets/images/gallery-04.jpg" alt="Ada Gurme Mutfak" />
+          <div class="gallery-item-overlay">
+            <span>İç Mekan</span>
+            <h4>Doğal Ahşap Gurme Mutfak</h4>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="wellness">
+          <img src="assets/images/gallery-05.jpg" alt="Spa & Termal Bölge" />
+          <div class="gallery-item-overlay">
+            <span>Wellness</span>
+            <h4>Hanera Spa & Termal Alanı</h4>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="exterior">
+          <img src="assets/images/gallery-06.jpg" alt="Gece Aydınlatmalı Havuz" />
+          <div class="gallery-item-overlay">
+            <span>Gece Ambiyansı</span>
+            <h4>Gece Aydınlatmalı Infinity Havuz</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SIKÇA SORULAN SORULAR
+       ========================================================================== -->
+  <section id="sss" class="section surface-bg">
+    <div class="container container-narrow">
+      <div class="section-head">
+        <div class="eyebrow" data-i18n="faq_eyebrow">MERAK EDİLENLER</div>
+        <h2 class="section-title" data-i18n="faq_title">Sıkça Sorulan Sorular</h2>
+      </div>
+
+      <div class="faq-wrap">
+        <div class="faq-item active">
+          <button class="faq-question">
+            <span>Hanera Gölbaşı projesinin temel felsefesi nedir?</span>
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            Hanera; ismini yaşama ve yere adanmışlığı simgeleyen 'Hanok' kökünden ve yeni bir dönemi simgeleyen 'ERA' kavramından alır. Mavi Bölgeler (Blue Zones) ilkelerini Ankara Mogan Gölü'nün temiz havası ve biyofilik mimariyle bir araya getiren insan odaklı bir yaşam topluluğudur.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Projede kaç adet villa yer alıyor ve teslim tarihi ne zamandır?</span>
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            Proje toplam 110.000 m² büyüklüğündeki göl cepheli arazide sadece 64 bağımsız müstakil villadan oluşmaktadır. Anahtar teslimleri 2026 son çeyreği itibarıyla başlayacaktır.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Villalarda müstakil havuz ve bahçe standart olarak sunuluyor mu?</span>
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            Evet, tüm villa tipleri bağımsız tapuludur. Her villanın kendine ait peyzajlı özel bahçesi, müstakil infinity yüzme havuzu ve kapalı otopark alanı standart olarak teslim edilir.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Hanera Kulüp ve sosyal alanlara kimler erişebilir?</span>
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            Hanera Kulüp; ısıtmalı lagün havuzu, longevity spa, padel kortları, organik restoran ve göl iskelesi dahil olmak üzere yalnızca villa sahiplerine ve onların davetlilerine tahsis edilmiş özel bir alandır.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Ödeme koşulları ve kişiye özel seçenekler nelerdir?</span>
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            Satış ofisimizde peşin alımlarda özel ayrıcalıklar, şirket içi vadeli finansman planları ve anlaşmalı banka konut kredisi çözümleri sunulmaktadır.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       İLETİŞİM VE RANDEVU FORMU
+       ========================================================================== -->
+  <section id="iletisim" class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info-panel">
+          <div class="eyebrow" data-i18n="contact_eyebrow">İLETİŞİM & RANDEVU</div>
+          <h2 data-i18n="contact_title">Hanera hakkında konuşalım.</h2>
+          <p data-i18n="contact_desc">
+            Proje detayları, kat planları, fiyatlandırma ve kişiye özel ödeme seçenekleri için satış uzmanlarımızla iletişime geçin.
+          </p>
+
+          <div class="contact-detail-items">
+            <div class="contact-item">
+              <h5>SATIŞ OFİSİ TELEFON</h5>
+              <a href="tel:03124440077">0 (312) 444 00 77</a>
+            </div>
+
+            <div class="contact-item">
+              <h5>E-POSTA İLETİŞİM</h5>
+              <a href="mailto:info@hanera.com.tr">info@hanera.com.tr</a>
+            </div>
+
+            <div class="contact-item">
+              <h5>SATIŞ VE TANITIM OFİSİ</h5>
+              <p>Sahil Caddesi No: 77, Mogan Kıyısı, Gölbaşı / Ankara</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-card">
+          <form data-lead-form>
+            <div class="form-grid-row">
+              <div class="form-group">
+                <label class="form-label">Adınız *</label>
+                <input type="text" class="form-input" placeholder="Adınız" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Soyadınız *</label>
+                <input type="text" class="form-input" placeholder="Soyadınız" required />
+              </div>
+            </div>
+
+            <div class="form-grid-row">
+              <div class="form-group">
+                <label class="form-label">E-Posta Adresiniz *</label>
+                <input type="email" class="form-input" placeholder="ornek@alanadi.com" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Telefon Numaranız *</label>
+                <div class="phone-input-group">
+                  <select class="form-select phone-country-select">
+                    <option value="+90">TR (+90)</option>
+                    <option value="+1">US (+1)</option>
+                    <option value="+44">UK (+44)</option>
+                    <option value="+49">DE (+49)</option>
+                  </select>
+                  <input type="tel" class="form-input" placeholder="5XX XXX XX XX" required />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">İlgilendiğiniz Villa Tipi</label>
+              <select class="form-select">
+                <option value="hepsi">Tüm Villa Tipleri Hakkında Bilgi Almak İstiyorum</option>
+                <option value="mogan">Villa Mogan (6+2 Kıyı Malikânesi)</option>
+                <option value="azure">Villa Azure (5+1 Prestij Villa)</option>
+                <option value="serene">Villa Serene (4+1 Tek Kat)</option>
+                <option value="aura">Villa Aura (4+1 Panoramik)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Notunuz veya Tercih Ettiğiniz Ziyaret Günü</label>
+              <textarea class="form-textarea" placeholder="Ziyaret randevusu veya sorularınız..."></textarea>
+            </div>
+
+            <label class="checkbox-wrap">
+              <input type="checkbox" required />
+              <span>
+                <a href="#" data-open-legal>KVKK Aydınlatma Metni</a>'ni okudum, kabul ediyorum.
+              </span>
+            </label>
+
+            <label class="checkbox-wrap">
+              <input type="checkbox" checked />
+              <span>Proje güncellemeleri ve ticari elektronik ileti gönderilmesini onaylıyorum.</span>
+            </label>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;" data-i18n="btn_submit_lead">
+              Randevu Talebi Gönder
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="brand">
+            <span class="brand-name">HANERA</span>
+            <span class="brand-tag">GÖLBAŞI</span>
+          </a>
+          <p>
+            Ankara Gölbaşı Mogan Gölü kıyısında, doğayla bütünleşen ve insan ölçeğini merkezine alan 64 bağımsız müstakil yaşam topluluğu.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Gezinti</h5>
+          <ul class="footer-links">
+            <li><a href="#kurumsal">Kurumsal</a></li>
+            <li><a href="#hikayemiz">Felsefe</a></li>
+            <li><a href="#konsept">Konsept</a></li>
+            <li><a href="#olanaklar">Yaşam Alanları</a></li>
+            <li><a href="#planlar">Planlar & Villalar</a></li>
+            <li><a href="#konum">Konum</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Villalar</h5>
+          <ul class="footer-links">
+            <li><a href="#planlar">Villa Mogan (6+2)</a></li>
+            <li><a href="#planlar">Villa Azure (5+1)</a></li>
+            <li><a href="#planlar">Villa Serene (4+1)</a></li>
+            <li><a href="#planlar">Villa Aura (4+1)</a></li>
+            <li><a href="#planlar">Vaziyet Planı</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>İletişim</h5>
+          <p style="color: rgba(241,233,220,0.7); font-size: 0.88rem; margin-bottom: 12px;">
+            Mogan Kıyısı Sahil Cad. No: 77 Gölbaşı / Ankara
+          </p>
+          <p style="color: var(--c-sand); font-family: var(--font-serif); font-size: 1.4rem; font-weight: 500;">
+            0 (312) 444 00 77
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 HANERA. Tüm hakları saklıdır.
+        </div>
+        <div class="footer-legal-links">
+          <a href="#" data-open-legal>KVKK Aydınlatma Metni</a>
+          <a href="#" data-open-legal>Çerez Politikası</a>
+          <a href="#" data-open-legal>Yasal Uyarı</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       FLOATING CONCIERGE WIDGET (URLA 77 SIGNATURE COMPONENT)
+       ========================================================================== -->
+  <div class="floating-contact-btn" title="Hızlı Bilgi Alın">
+    <div class="floating-pulse-dot"></div>
+    <span style="font-weight: 500; font-size: 0.84rem; letter-spacing: 0.08em;">BİZ SİZİ ARAYALIM</span>
+  </div>
+
+  <div class="floating-contact-drawer">
+    <div class="drawer-header">
+      <div>
+        <h4>Biz Sizi Arayalım</h4>
+        <p>Satış uzmanımız hemen arasın</p>
+      </div>
+      <button class="drawer-close" aria-label="Kapat">&times;</button>
+    </div>
+    <div class="drawer-body">
+      <form data-lead-form>
+        <div class="form-group">
+          <label class="form-label">Adınız Soyadınız *</label>
+          <input type="text" class="form-input" placeholder="Adınız Soyadınız" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Telefon Numaranız *</label>
+          <input type="tel" class="form-input" placeholder="0 (5XX) XXX XX XX" required />
+        </div>
+        <label class="checkbox-wrap" style="font-size: 0.72rem;">
+          <input type="checkbox" required />
+          <span>KVKK metni kapsamında verilerimin işlenmesini onaylıyorum.</span>
+        </label>
+        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 12px;">Hemen Bilgi Al</button>
+      </form>
+      <div class="drawer-phone-direct">
+        <span>DOĞRUDAN İLETİŞİM</span>
+        <a href="tel:03124440077">0 (312) 444 00 77</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL: E-KATALOG İNDİRME
+       ========================================================================== -->
+  <div class="modal-overlay" id="catalogueModal">
+    <div class="modal-box">
+      <button class="modal-close-btn">&times;</button>
+      <div class="eyebrow">DİJİTAL DOKÜMAN</div>
+      <h3 style="font-family: var(--font-serif); font-size: 2.2rem; color: var(--c-forest); margin-bottom: 8px;" data-i18n="modal_catalogue_title">
+        Dijital E-Kataloğu İndirin
+      </h3>
+      <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 24px;" data-i18n="modal_catalogue_desc">
+        Hanera Gölbaşı projesinin villa tipleri, mimari planları, sosyal olanakları ve teknik şartnamesini içeren kapsamlı broşürü indirin.
+      </p>
+
+      <form data-lead-form>
+        <div class="form-group">
+          <label class="form-label">Adınız Soyadınız *</label>
+          <input type="text" class="form-input" placeholder="Adınız Soyadınız" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label">E-Posta Adresiniz *</label>
+          <input type="email" class="form-input" placeholder="ornek@alanadi.com" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Telefon Numaranız *</label>
+          <input type="tel" class="form-input" placeholder="0 (5XX) XXX XX XX" required />
+        </div>
+        <label class="checkbox-wrap">
+          <input type="checkbox" required />
+          <span>Kişisel Verilerin Korunması şartlarını kabul ediyorum.</span>
+        </label>
+        <button type="submit" class="btn btn-bronz" style="width: 100%;">E-Kataloğu Şimdi İndir (PDF)</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL: KVKK & YASAL AYDINLATMA METNİ
+       ========================================================================== -->
+  <div class="modal-overlay" id="legalModal">
+    <div class="modal-box" style="max-width: 660px;">
+      <button class="modal-close-btn">&times;</button>
+      <div class="eyebrow">YASAL BİLGİLENDİRME</div>
+      <h3 style="font-family: var(--font-serif); font-size: 2rem; color: var(--c-forest); margin-bottom: 16px;">
+        Kişisel Verilerin Korunması ve Aydınlatma Metni
+      </h3>
+      <div style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.75; max-height: 50vh; overflow-y: auto; padding-right: 12px;">
+        <p><strong>Veri Sorumlusu:</strong> HANERA olarak 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") uyarınca, veri sorumlusu sıfatıyla hareket etmekteyiz.</p>
+        <br />
+        <p><strong>İşlenme Amacı:</strong> Web sitemizdeki formlar aracılığıyla paylaştığınız ad, soyad, e-posta adresi ve telefon numarası gibi kişisel verileriniz; Hanera projemiz hakkında bilgilendirme yapılması, satış ofisi randevusu organize edilmesi ve sorularınızın yanıtlanması amacıyla işlenmektedir.</p>
+        <br />
+        <p><strong>Haklarınız:</strong> KVKK'nın 11. maddesi uyarınca; kişisel verilerinizin işlenip işlenmediğini öğrenme, işlenmişse bilgi talep etme ve silinmesini/yok edilmesini talep etme hakkına sahipsiniz.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL: FULLSCREEN LIGHTBOX
+       ========================================================================== -->
+  <div class="lightbox-modal">
+    <div class="lightbox-controls">
+      <button class="lightbox-btn lightbox-prev" aria-label="Önceki">&#10094;</button>
+      <button class="lightbox-btn lightbox-next" aria-label="Sonraki">&#10095;</button>
+    </div>
+    <div class="lightbox-img-wrap">
+      <img src="" alt="Galeri Büyük Görsel" class="lightbox-img" />
+      <div class="lightbox-caption"></div>
+    </div>
+    <button class="lightbox-btn lightbox-close" style="position: absolute; top: 24px; right: 24px;">&times;</button>
+  </div>
+
+  <!-- ==========================================================================
+       DRAWER: MOBILE NAVIGATION
+       ========================================================================== -->
+  <div class="mobile-nav-drawer">
+    <div class="mobile-nav-head">
+      <a href="#" class="brand">
+        <span class="brand-name" style="color: #ffffff;">HANERA</span>
+        <span class="brand-tag">GÖLBAŞI</span>
+      </a>
+      <button class="modal-close-btn mobile-nav-close" aria-label="Menüyü Kapat">&times;</button>
+    </div>
+
+    <ul class="mobile-nav-links">
+      <li><a href="#kurumsal" data-i18n="nav_corporate">Kurumsal</a></li>
+      <li><a href="#hikayemiz" data-i18n="nav_story">Felsefe</a></li>
+      <li><a href="#konsept" data-i18n="nav_concept">Konsept</a></li>
+      <li><a href="#olanaklar" data-i18n="nav_amenities">Yaşam Alanları</a></li>
+      <li><a href="#planlar" data-i18n="nav_plans">Villalar & Planlar</a></li>
+      <li><a href="#konum" data-i18n="nav_location">Konum</a></li>
+      <li><a href="#galeri" data-i18n="nav_gallery">Galeri</a></li>
+      <li><a href="#sss" data-i18n="nav_faq">S.S.S.</a></li>
+      <li><a href="#iletisim" data-i18n="nav_contact">İletişim</a></li>
+    </ul>
+
+    <div class="mobile-nav-foot">
+      <button class="btn btn-bronz" data-open-catalogue style="width: 100%;">E-Katalog İndir</button>
+      <a href="tel:03124440077" class="btn btn-primary" style="width: 100%;">0 (312) 444 00 77</a>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/app.js"></script>
+</body>
+</html>
