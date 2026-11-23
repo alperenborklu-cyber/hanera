@@ -5,7 +5,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   initHeader();
-  initHeroVideo();
   initMobileMenu();
   initLanguageSwitcher();
   initVillaPlans();
@@ -17,29 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initFormSubmissions();
 });
 
-/* ==========================================================================
-   0. HERO CINEMATIC VIDEO CONTROLS
-   ========================================================================== */
-function initHeroVideo() {
-  const video = document.getElementById('heroVideo');
-  const toggleBtn = document.getElementById('videoToggleBtn');
-  if (!video || !toggleBtn) return;
-
-  const icon = toggleBtn.querySelector('.video-state-icon');
-  const label = toggleBtn.querySelector('.video-state-text');
-
-  toggleBtn.addEventListener('click', () => {
-    if (video.paused) {
-      video.play();
-      if (icon) icon.textContent = '⏸';
-      if (label) label.textContent = 'CANLI SİNEMATİK';
-    } else {
-      video.pause();
-      if (icon) icon.textContent = '▶';
-      if (label) label.textContent = 'DURAKLATILDI';
-    }
-  });
-}
 
 /* ==========================================================================
    1. HEADER SCROLL & SCROLLSPY
