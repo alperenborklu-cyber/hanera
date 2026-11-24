@@ -789,19 +789,6 @@ button {
   transform: scale(1.06);
 }
 
-.concept-num {
-  position: absolute;
-  top: 14px;
-  right: 14px;
-  font-family: var(--font-serif);
-  font-size: 1.15rem;
-  font-weight: 600;
-  color: var(--c-ivory);
-  background: rgba(21, 50, 43, 0.85);
-  backdrop-filter: blur(8px);
-  padding: 4px 10px;
-  border-radius: var(--radius-xs);
-}
 
 .concept-body {
   padding: 28px 24px;
