@@ -37,9 +37,7 @@ Mavi Bölgeler (*Blue Zones*) araştırmalarından ve Japonya’nın *Ikigai* fe
   - *Villa Serene* (4+1 Tek Kat Bungalov)
   - *Villa Aura* (4+1 Panoramik Dubleks)
   - Mimari Blueprint (SVG) ve 3D Render geçiş modu
-- **Yaşam Alanları & Sosyal Olanaklar:** Isıtmalı Mogan Lagün Havuzu, Longevity Wellness & Spa, Organik Kafe & Bistro, Technogym Fitness & Reformer Pilates, Tenis & Padel Kortları.
-- **Galeri & Tam Ekran Lightbox:** Mimari, iç mekan ve wellness kategorili fotoğraf galerisi.
-- **Çift Dilli Altyapı:** Sayfa yenilenmeksizin anlık Türkçe / İngilizce geçişi (TR / EN).
+- **Galeri & Tam Ekran Lightbox:** Mimari, iç mekan ve peyzaj kategorili fotoğraf galerisi.
 - **Özel Konsiyerj:** Hızlı iletişim çekmecesi (*Biz Sizi Arayalım*) ve E-Katalog indirme modalları.
 
 ---
